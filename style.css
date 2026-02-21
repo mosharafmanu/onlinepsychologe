@@ -1,0 +1,194 @@
+/**
+ * Theme Name:  Psychologe Haegermann
+ * Theme URI:
+ * Author:
+ * Author URI:
+ * Description: A child theme for the Astra WordPress theme.
+ * Version:     1.0.0
+ * Template:    astra
+ * License:     GNU General Public License v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: psychologe-haegermann
+ * Domain Path: /languages
+ * Tags:        custom-menu, custom-logo, one-column, two-columns, left-sidebar, right-sidebar,
+ *              custom-colors, featured-images, full-width-template, rtl-language-support,
+ *              translation-ready, blog
+ */
+
+/*
+ * Add your custom CSS below this line.
+ * -----------------------------------------------------------------------
+ */
+
+/* ==========================================================================
+   Related Articles Section
+   ========================================================================== */
+
+.related-articles {
+	padding: 80px 0 96px;
+	background-color: #f5ede0;
+}
+
+.related-articles__inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.related-articles__header {
+	text-align: center;
+	margin-bottom: 56px;
+}
+
+.related-articles__eyebrow {
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: #b08050;
+	margin: 0 0 16px;
+}
+
+.related-articles__heading {
+	font-size: clamp( 1.6rem, 3vw, 2.4rem );
+	font-weight: 300;
+	line-height: 1.2;
+	color: #1c2c4a;
+	margin: 0;
+}
+
+/* Grid */
+
+.related-articles__grid {
+	display: grid;
+	grid-template-columns: repeat( 3, 1fr );
+	gap: 32px;
+}
+
+/* Card */
+
+.related-articles__card {
+	background: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.related-articles__card-link {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+}
+
+.related-articles__card-link:hover .related-articles__card-img {
+	transform: scale( 1.03 );
+}
+
+/* Card – image */
+
+.related-articles__card-image {
+	aspect-ratio: 3 / 2;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.related-articles__card-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.4s ease;
+}
+
+.related-articles__card-img--placeholder {
+	background: #e8ddd0;
+}
+
+/* Card – body */
+
+.related-articles__card-body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 28px 28px 24px;
+}
+
+.related-articles__card-category {
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: #b08050;
+	margin: 0 0 12px;
+}
+
+.related-articles__card-title {
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 1.35;
+	color: #1c2c4a;
+	margin: 0 0 12px;
+}
+
+.related-articles__card-excerpt {
+	font-size: 14px;
+	line-height: 1.65;
+	color: #666;
+	margin: 0 0 auto;
+	padding-bottom: 16px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Card – meta */
+
+.related-articles__card-meta {
+	font-size: 13px;
+	color: #999;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.related-articles__card-meta-sep {
+	font-size: 10px;
+	color: #bbb;
+}
+
+/* Responsive */
+
+@media ( max-width: 900px ) {
+	.related-articles__grid {
+		grid-template-columns: repeat( 2, 1fr );
+	}
+
+	.related-articles__grid .related-articles__card:nth-child( 3 ) {
+		display: none;
+	}
+}
+
+@media ( max-width: 580px ) {
+	.related-articles {
+		padding: 56px 0 72px;
+	}
+
+	.related-articles__inner {
+		padding: 0 20px;
+	}
+
+	.related-articles__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.related-articles__grid .related-articles__card:nth-child( 3 ) {
+		display: flex;
+	}
+}
+
+
+ 

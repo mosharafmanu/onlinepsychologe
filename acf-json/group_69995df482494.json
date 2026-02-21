@@ -1,0 +1,320 @@
+{
+    "key": "group_69995df482494",
+    "title": "Page Builder",
+    "fields": [
+        {
+            "key": "field_69995df4f4d29",
+            "label": "CMS",
+            "name": "cms",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_69995e000e1af": {
+                    "key": "layout_69995e000e1af",
+                    "name": "single_post_hero",
+                    "label": "Single Post Hero",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_sph_styled_word",
+                            "label": "Hervorgehobenes Wort im Titel",
+                            "name": "heading_styled_word",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Gib das Wort ein, das im Titel kursiv hervorgehoben werden soll (z.\u00a0B. EMDR).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "z.\u00a0B. EMDR",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_sph_reading_time",
+                            "label": "Lesezeit (Minuten)",
+                            "name": "reading_time",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "50%", "class": "", "id": "" },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "Min.",
+                            "min": 1,
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_sph_takeaways_title",
+                            "label": "Key Takeaways \u2013 \u00dcberschrift",
+                            "name": "key_takeaways_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "50%", "class": "", "id": "" },
+                            "default_value": "Das Wichtigste auf einen Blick",
+                            "maxlength": "",
+                            "placeholder": "Das Wichtigste auf einen Blick",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_sph_takeaways",
+                            "label": "Key Takeaways",
+                            "name": "key_takeaways",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "field_sph_takeaway_item",
+                            "layout": "block",
+                            "button_label": "Punkt hinzuf\u00fcgen",
+                            "sub_fields": [
+                                {
+                                    "key": "field_sph_takeaway_item",
+                                    "label": "Punkt",
+                                    "name": "item",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": { "width": "", "class": "", "id": "" },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_mcf001": {
+                    "key": "layout_mcf001",
+                    "name": "media_content_fifty",
+                    "label": "Media Content Fifty",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_mcf_image_position",
+                            "label": "Bildposition",
+                            "name": "image_position",
+                            "aria-label": "",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "50%", "class": "", "id": "" },
+                            "choices": {
+                                "left": "Links",
+                                "right": "Rechts"
+                            },
+                            "default_value": "left",
+                            "return_format": "value",
+                            "allow_null": 0
+                        },
+                        {
+                            "key": "field_mcf_heading",
+                            "label": "\u00dcberschrift",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "50%", "class": "", "id": "" },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mcf_content",
+                            "label": "Inhalt",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_mcf_image",
+                            "label": "Bild",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "return_format": "array",
+                            "library": "all",
+                            "preview_size": "medium",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_mcf_image_caption",
+                            "label": "Bildunterschrift",
+                            "name": "image_caption",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_tc001": {
+                    "key": "layout_tc001",
+                    "name": "text_content",
+                    "label": "Text Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_tc_heading",
+                            "label": "Überschrift",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_tc_content",
+                            "label": "Inhalt",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_pq001": {
+                    "key": "layout_pq001",
+                    "name": "pullquote",
+                    "label": "Pullquote",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_pq_quote",
+                            "label": "Zitat",
+                            "name": "quote",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_pq_attribution",
+                            "label": "Quellenangabe",
+                            "name": "attribution",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "z.\u00a0B. Francine Shapiro, Begr\u00fcnderin der EMDR-Methode",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": { "width": "", "class": "", "id": "" },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1771670931
+}
