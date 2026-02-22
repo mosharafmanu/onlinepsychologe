@@ -32,7 +32,7 @@ $modifier = 'media-content-fifty--image-' . esc_attr( $image_position );
 
 		<!-- Image block -->
 		<?php if ( $image ) : ?>
-			<div>
+			<div class="media-content-fifty-left">
 				<figure class="media-content-fifty__image">
 					<img
 						src="<?php echo esc_url( $image['url'] ); ?>"

@@ -1,7 +1,8 @@
 .single-post-hero {
-  background-color: #faf8f6;
-  padding-top: 5.3125rem;
-  padding-bottom: 4.375rem;
+	background-color: #faf8f6;
+	padding-top: 5.3125rem;
+	padding-bottom: 4.375rem;
+	margin-bottom: 4.5rem;
 }
 .single-post-hero__inner {
   display: grid;
@@ -136,11 +137,6 @@
   }
 }
 /* Single post Hero Css End */
-
-.text-content {
-  padding-top: 4.5rem;
-  padding-bottom: 2rem;
-}
 .text-content__inner {
   max-width: 51.25rem;
   margin-left: auto;
@@ -179,16 +175,52 @@
   }
 }
 /* Text Content Css End */
-
-.media-content-fifty__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  column-gap: 3rem;
-  max-width: 51.25rem;
-  margin-left: auto;
-  margin-right: auto;
+.media-content-fifty {
+	margin-top: 3.125rem;
+	margin-bottom: 3.125rem;
 }
+.media-content-fifty__text {
+    grid-area: content;
+}
+.media-content-fifty-left {
+	grid-area: media;
+}
+.media-content-fifty__inner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    max-width: 51.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.media-content-fifty--image-right .media-content-fifty__inner {
+    grid-template-areas: "content media";
+}
+.media-content-fifty--image-left .media-content-fifty__inner{
+    grid-template-areas: "media content";
+}
+@media only screen and (max-width:991px) {
+
+    .media-content-fifty__inner {
+        row-gap: 2rem;
+    }
+    .media-content-fifty--image-right .media-content-fifty__inner{
+        grid-template-areas: 
+        "media" 
+        "content";
+        grid-template-columns: 1fr;
+    }
+    .media-content-fifty--image-left .media-content-fifty__inner{
+        grid-template-areas: 
+        "media"
+        "content";
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 .media-content-fifty__heading {
   font-size: 1.45rem;
   font-weight: 500;
@@ -204,7 +236,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 .75rem 2.5rem rgba(30, 42, 58, 0.08);
-  height: 18.75rem;
+  height: 17.5rem;
 }
 .media-content-fifty__image img {
   width: 100%;
@@ -235,9 +267,6 @@
   }
 }
 /* Media Content Fifty End */
-.pullquote {
-  margin-bottom: 4.375rem;
-}
 .pullquote__inner {
   max-width: 51.25rem;
   margin-left: auto;
