@@ -1,1 +1,57 @@
+/* Header start */
+.main-nav a::after {
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 0;
+	height: 1.5px;
+	background: var(--accent);
+	transition: width 0.3s ease;
+}
+.main-nav a:hover::after {
+	width: 100%;
+}
+/* Header end */
 
+/* Home> hero start */
+.hero-animation-title h1 span {
+	color: #9E7B5A;
+}
+/* Home> hero end */
+
+/* Box start */
+.psychologische-box {
+	transition: all 0.4s ease;
+	position: relative;
+}
+.psychologische-box:hover {
+	border-color: #9E7B5A;
+	transform: translateY(-4px);
+	box-shadow: 0 20px 48px rgba(30,42,58,0.06);
+}
+.psychologische-box:hover::before {
+	transform: scaleX(1);
+}
+.psychologische-box::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: #9E7B5A;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.4s ease;
+}
+/* Box end */
+
+/* Related Article Start */
+.related-articles__inner {
+	padding: 0;
+}
+.relatedt-article-title-wrapper {
+	min-height: 60px;
+}
+/* Related Article end */

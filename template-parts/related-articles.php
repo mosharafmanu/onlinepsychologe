@@ -47,6 +47,7 @@ if ( ! $query->have_posts() ) {
 				$card_title   = get_the_title();
 				$card_url     = get_permalink();
 				$card_excerpt = get_the_excerpt();
+				$card_excerpt = wp_trim_words( $card_excerpt, 10, '.' );
 				$thumb_id     = get_post_thumbnail_id( $card_id );
 
 				// Reading time from ACF flexible content, fallback to word-count estimate.
@@ -87,9 +88,11 @@ if ( ! $query->have_posts() ) {
 								</p>
 							<?php endif; ?>
 
-							<h3 class="related-articles__card-title">
-								<?php echo esc_html( $card_title ); ?>
-							</h3>
+							<div class="relatedt-article-title-wrapper">
+								<h3 class="related-articles__card-title">
+									<?php echo esc_html( $card_title ); ?>
+								</h3>
+							</div>
 
 							<?php if ( $card_excerpt ) : ?>
 								<p class="related-articles__card-excerpt">
