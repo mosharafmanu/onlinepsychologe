@@ -32,19 +32,21 @@ $modifier = 'media-content-fifty--image-' . esc_attr( $image_position );
 
 		<!-- Image block -->
 		<?php if ( $image ) : ?>
-			<figure class="media-content-fifty__image">
-				<img
-					src="<?php echo esc_url( $image['url'] ); ?>"
-					alt="<?php echo esc_attr( $image['alt'] ); ?>"
-					width="<?php echo esc_attr( $image['width'] ); ?>"
-					height="<?php echo esc_attr( $image['height'] ); ?>"
-				>
+			<div>
+				<figure class="media-content-fifty__image">
+					<img
+						src="<?php echo esc_url( $image['url'] ); ?>"
+						alt="<?php echo esc_attr( $image['alt'] ); ?>"
+						width="<?php echo esc_attr( $image['width'] ); ?>"
+						height="<?php echo esc_attr( $image['height'] ); ?>"
+					>
+				</figure>
 				<?php if ( $image_caption ) : ?>
 					<figcaption class="media-content-fifty__caption">
 						<?php echo esc_html( $image_caption ); ?>
 					</figcaption>
 				<?php endif; ?>
-			</figure>
+			</div>
 		<?php else : ?>
 			<div class="media-content-fifty__image media-content-fifty__image--empty"></div>
 		<?php endif; ?>

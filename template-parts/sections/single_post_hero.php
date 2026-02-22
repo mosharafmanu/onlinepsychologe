@@ -96,6 +96,9 @@ if ( $styled_word ) {
 					<ul class="single-post-hero__takeaways-list">
 						<?php foreach ( $takeaways as $row ) : ?>
 							<li class="single-post-hero__takeaways-item">
+								<span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5 12.5L10.1375 17.6375C10.5837 18.0837 11.3266 18.0101 11.6766 17.4851L20 5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+								</svg></span>
 								<?php echo wp_kses_post( $row['item'] ); ?>
 							</li>
 						<?php endforeach; ?>
