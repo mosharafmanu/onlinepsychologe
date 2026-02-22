@@ -82,7 +82,6 @@
 /* Related Article end */
 
 /* Article start */
-/* Article end */
 .post-loop-items .post {
 	background: #fff;
 	border-radius: 16px;
@@ -100,3 +99,4 @@
 .post-loop-items .post:hover img {
 	transform: scale(1.04);
 }
+/* Article end */
