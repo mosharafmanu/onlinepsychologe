@@ -27,12 +27,12 @@ function psychologe_haegermann_enqueue_styles() {
 		wp_get_theme()->get( 'Version' )
 	);
 
-	wp_enqueue_style(
-		'psychologe-haegermann-imran-css',
-		get_stylesheet_directory_uri() . '/imran-styles.css',
-		array( 'psychologe-haegermann-theme-css' ),
-		wp_get_theme()->get( 'Version' )
-	);
+wp_enqueue_style(
+    'psychologe-haegermann-imran-css',
+    get_stylesheet_directory_uri() . '/imran-styles.css',
+    array( 'psychologe-haegermann-theme-css' ),
+    '2.0.0' // manual version
+);
 
 	wp_enqueue_style(
 		'psychologe-haegermann-faisal-css',
